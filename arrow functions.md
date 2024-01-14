@@ -66,7 +66,7 @@ It is worth noting that the curly brackets {} used to define objects cannot form
 
 
 ### （4）The methods call(), apply(), bind(), etc. cannot change the reference of 'this' in arrow functions.
-
+```
 var id = 'Global';
 let fun1 = () => {
     console.log(this.id)
@@ -75,6 +75,7 @@ fun1();                     // 'Global'
 fun1.call({id: 'Obj'});     // 'Global'
 fun1.apply({id: 'Obj'});    // 'Global'
 fun1.bind({id: 'Obj'})();   // 'Global'
+```
 
 ### （5）Arrow functions cannot be used as constructors
 
