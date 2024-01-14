@@ -3,14 +3,16 @@
 
 The arrow function is introduced in ES6. It does not have a prototype, nor does it have its own this reference, and it cannot use the arguments parameter. Therefore, it is not possible to use the new operator with an arrow function.
 
-The steps to implement the new operator are as follows:
+## The steps to implement the new operator are as follows:
 
 
-   1.Create a new object
-   2. Assign the constructor function's scope to the new object (in other words, set the object's proto property to point to the constructor function's prototype property)
+1.Create a new object
+   
+2. Assign the constructor function's scope to the new object (in other words, set the object's proto property to point to the constructor function's prototype property)
 
-   3. Point to the code in the constructor, and this in the constructor points to the object (That is, to add properties and methods to the object)
-  4. Return a new object
+3. Point to the code in the constructor, and this in the constructor points to the object (That is, to add properties and methods to the object)
+
+4. Return a new object
 
 Therefore, the arrow functions in the above steps cannot be executed.
 
