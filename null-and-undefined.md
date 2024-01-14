@@ -1,4 +1,4 @@
-The difference between null and undefined
+# The difference between null and undefined
 
 
 First of all, Undefined and Null are both basic data types. Each of these two basic data types has only one value, which is undefined and null.
