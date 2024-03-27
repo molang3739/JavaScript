@@ -26,6 +26,7 @@ if no characters could be collected, return empty string
 now we have a matrix of 3 rows , 7 columns.
 we'll start at  coordinates   [0,0] . and next we'll move to [1,1] ,the rest coordinates will be [2,2] 
 [3,1]  [4,0] [5,1] [6,2] 
+
 so in the function  decode,it recieves  a 2D array
 ```
 /**
