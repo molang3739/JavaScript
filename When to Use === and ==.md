@@ -1,6 +1,6 @@
 ### When to Use === and ==
 
-#### The == operator should only be used when comparing with null. In all other situations, use ===.
+#### Use the == operator only when checking for null or undefined. In all other cases, use === for strict equality.
 
 For example:
 
