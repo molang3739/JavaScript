@@ -3,15 +3,17 @@
 
 For the == operator,if the types of the two operands being compared are different, the type conversion is performed. If you compare whether x and y are the same, the following judgment process will be performed:
 
-
-
 1. First, it will determine whether the two types are the same, and compare the size of the two if they are the same;
+   
     
 2.If the types are not the same, type conversion will be performed;
+
   
 3.It will first determine whether it is comparing null and undefined, and if it is, it will return true
+
   
 4.Check if the types of both are string and number, if so, the string will be converted to number.
+
   
 ```
 1 == '1'
