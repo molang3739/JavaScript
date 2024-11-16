@@ -47,6 +47,17 @@ Here are the 3 basic rules in Prototype
 
 take the value huck for example 
 
-huck has a __proto__  points to Student's prototype.
+huck has a `__proto__`  points to Student's prototype.
+
+![protytype](./images/prototype/p1@2x.png)
+
+and Student‘s  `__proto__`  points to People's prototype.
+
+![protytype](./images/prototype/p2@2x.png)
+
+and People‘s  `__proto__`  points to Object's prototype.
 
 
+Object‘s  `__proto__`  points to null
+
+![protytype](./images/prototype/p3@2x.png)
