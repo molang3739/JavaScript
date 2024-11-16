@@ -1,0 +1,52 @@
+there is simple question how to check a variable is Array.
+the answer is easy 
+```
+arr instanceof Array
+```
+if result is true  ,arr is Array .otherwise  arr isn't;
+
+so there is another question：  what's  principle behind instanceof in Javascript
+
+let me explain
+
+there're two classes. People and Student . Student implements People
+```
+class People{
+    constructor(name){
+        this.name = name
+    }
+    eat(){
+        console.log(`${this.name} eat something`)
+    }
+}
+
+class Student extends People{
+    constructor(name,number){
+        super(name); // parent class will handel this property
+        this.number =number;
+    }
+    sayHi(){
+        console.log(`name ${this.name}, no ${this.number}`)
+    }
+}
+```
+
+```
+const huck = new Student('huck',100);
+console.log(huck.name)
+console.log(huck.number)
+huck.sayHi();
+```
+
+huck is an instance of Student;
+
+Here are the 3 basic rules in Prototype
+"Every class in Javascript has a explicit prototype property"
+"Every instance in Javascript has implicit prototype, __proto__"
+"An instance's __proto__ prototype points to correspongding class"
+
+take the value huck for example 
+
+huck has a __proto__  points to Student's prototype.
+
+
