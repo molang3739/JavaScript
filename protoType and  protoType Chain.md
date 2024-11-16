@@ -1,4 +1,4 @@
-there is simple question how to check a variable is Array.
+there is simple question how can you check if a variable is an Array。
 the answer is easy 
 ```
 arr instanceof Array
@@ -22,7 +22,7 @@ class People{
 
 class Student extends People{
     constructor(name,number){
-        super(name); // parent class will handel this property
+        super(name); // the parent class handles this property
         this.number =number;
     }
     sayHi(){
@@ -38,14 +38,14 @@ console.log(huck.number)
 huck.sayHi();
 ```
 
-huck is an instance of Student;
+"huck" is an instance of Student;
 
 Here are the 3 basic rules in Prototype
 "Every class in Javascript has a explicit prototype property"
 "Every instance in Javascript has implicit prototype, __proto__"
-"An instance's __proto__ prototype points to correspongding class"
+"An instance's __proto__ prototype points to corresponding class"
 
-take the value huck for example 
+take the value "huck" for example 
 
 huck has a `__proto__`  points to Student's prototype.
 
