@@ -8,7 +8,7 @@
     <div id="content"></div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        fetch('./deepClone.md.md')
+        fetch('./deepClone.md')
             .then(response => response.text())
             .then(text => {
                 document.getElementById('content').innerHTML = marked(text);
